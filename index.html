@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>足球無人機</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(#87CEEB,#ffffff);
+    overflow-x:hidden;
+}
+
+header{
+    background:#00AEEF;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.logo{
+    width:150px;
+    height:150px;
+    margin:auto;
+    background:white;
+    border-radius:50%;
+    position:relative;
+}
+
+.eye{
+    width:30px;
+    height:40px;
+    background:white;
+    border:3px solid black;
+    border-radius:50%;
+    position:absolute;
+    top:35px;
+}
+
+.eye.left{left:40px;}
+.eye.right{right:40px;}
+
+.pupil{
+    width:10px;
+    height:10px;
+    background:black;
+    border-radius:50%;
+    margin:20px auto;
+}
+
+.nose{
+    width:20px;
+    height:20px;
+    background:red;
+    border-radius:50%;
+    position:absolute;
+    left:65px;
+    top:70px;
+}
+
+.drone{
+    width:220px;
+    margin:60px auto;
+    animation:fly 4s ease-in-out infinite;
+}
+
+.drone img{
+    width:100%;
+}
+
+@keyframes fly{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-20px);}
+    100%{transform:translateY(0);}
+}
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+    text-align:center;
+}
+
+.card{
+    display:inline-block;
+    width:260px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+    margin:20px;
+    padding:20px;
+}
+
+button{
+    background:#00AEEF;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0090cc;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>⚽ 足球無人機</h1>
+<p>智慧飛行 × 足球科技</p>
+</header>
+
+<div class="logo">
+    <div class="eye left">
+        <div class="pupil"></div>
+    </div>
+    <div class="eye right">
+        <div class="pupil"></div>
+    </div>
+    <div class="nose"></div>
+</div>
+
+<div class="drone">
+<img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600"
+alt="Drone">
+</div>
+
+<section>
+
+<div class="card">
+<h2>AI 自動追球</h2>
+<p>利用 AI 即時辨識足球位置。</p>
+</div>
+
+<div class="card">
+<h2>4K 攝影</h2>
+<p>完整記錄比賽精彩畫面。</p>
+</div>
+
+<div class="card">
+<h2>高速飛行</h2>
+<p>最高速度 80 km/h。</p>
+</div>
+
+<br><br>
+
+<button>立即了解</button>
+
+</section>
+
+</body>
+</html>
